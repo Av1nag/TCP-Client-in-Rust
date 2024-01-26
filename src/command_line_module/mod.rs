@@ -49,7 +49,6 @@ pub fn main() {
                 .expect("No file found. Consider creating a file ");
             println!("\n{contents}");
 
-            // Add your read mode logic here
         }
         _ => {
             println!(

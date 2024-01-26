@@ -12,10 +12,6 @@ use crate::data_to_file_append;
 pub async fn btc_data(no_of_times: u32) -> (f64, u32, f64) {
     let start_time = tokio::time::Instant::now();
 
-    // Builder::from_default_env()
-    //     .filter(None, log::LevelFilter::Info)
-    //     .init();
-    // Establish connection
     let (mut conn, _) = BinanceWebSocketClient::connect_async_default()
         .await
         .expect("Failed to connect");
